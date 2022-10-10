@@ -1,0 +1,22 @@
+#cmd
+- python -m venv {nome do ambiente}
+- ./{nome do ambiente}/Scripts/activate
+
+pip install scrapy
+Settar no interpretador o ambiente virtual criado
+scrapy startproject imdb250
+cd imdb250
+scrapy genspider imdb imdb.com
+
+scrapy shell
+
+fetch('url')
+
+scrapy crawl imdb -O imdb.json
+
+https://www.imdb.com/chart/top/?ref_=nv_mv_250
+
+.titleColumn - Nome e ano do filme
+.titleColumn a - Nome do Filme
+.secondaryInfo - Ano do Filme
+strong - Avaliação do filme
